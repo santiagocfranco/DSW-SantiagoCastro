@@ -1,0 +1,128 @@
+body{
+    background-color:blanchedalmond;
+}
+
+header{
+    grid-column: 1/2;
+    color:black;
+    background-color:seagreen;
+    margin: 20px;
+    padding: 10px;
+    font-size: x-large;
+    text-align: center;
+}
+.logo{
+    grid-column: 2/3;
+    margin: 20px;
+    background-color:seagreen;
+    padding: 10px;
+  
+}
+
+.encabezado{
+    display: grid;
+    grid-template-columns: 85% 15%;
+}
+
+nav{
+    background-color:seagreen;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 1px;
+    
+}
+
+/*oculta el submenu hasta tocarlo*/
+.lista li{
+    display: none;
+    position: relative;
+}
+
+/*acomoda el espacio entre las opciones del submenu*/
+.lista {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+/*modificacion del texto en el menu*/
+.menu a {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    font-size: large;
+    background:peru;
+    height: 50px;
+    text-decoration: none;
+    
+}
+
+/*define el color de la casilla al tocar */
+.menu a:hover {
+    background:moccasin;
+    
+}
+
+/*juntifica las casillas del menu*/
+.menu ul {
+    list-style: none;
+    display: flex;
+    padding-right: 50px;
+
+}
+
+/*le da mas espacion entre las casillas del menu*/
+.menu li {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+/*despliega el submenu despues de tocarlo*/
+.menu li:hover .lista>li {
+    top: 0;
+    display: block;
+}
+
+
+h2{
+    font-size:xx-large;
+    text-align:center;
+}
+section{
+    grid-column: 1/4;
+    background-color:burlywood;
+    padding: 50px;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 20px;
+    
+
+}
+aside{
+    grid-column: 4/5;
+    background-color:peru;
+    padding-top: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 2300px;
+
+
+}
+.pagina{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+footer{
+    background-color:peru;
+    padding: 50px;
+    margin: 20px;
+
+}
