@@ -83,7 +83,7 @@ h2{
     text-align:center;
 }
 section{
-    height: 565px;
+    height: 1200px;
     grid-column: 1/4;
     background-color:burlywood;
     padding: 50px;
@@ -102,6 +102,7 @@ aside{
     margin-left: 10px;
     margin-right: 20px;
     margin-top: 20px;
+    margin-bottom: 600px;
     
 
 
